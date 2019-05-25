@@ -11,4 +11,14 @@ com.alipay.sofa.rpc.registry.address=consul://127.0.0.1:8500
 com.alipay.sofa.rpc.registry.address=consul://127.0.0.1:8500?a=1&b=2
 
 ```
-进行设置
+进行设置。
+
+需要手动添加 consul 的依赖，其中 version 为用户想使用的 version。
+
+```
+<dependency>
+    <groupId>com.ecwid.consul</groupId>
+    <artifactId>consul-api</artifactId>
+    <version>${version}</version>
+</dependency>
+```
